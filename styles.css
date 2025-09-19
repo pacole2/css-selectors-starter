@@ -242,7 +242,7 @@ main {
     select the sections on the page that are direct descendants to the main by tag names and using the direct descendant selector
 */
 /* ----- */
-main > section {
+main section {
     display: block;
     width: calc(100% - 2rem);
     max-width: calc(500px - 2rem);
@@ -278,7 +278,7 @@ p {
     select the images and SVGs by tag names
 */
 /* ----- */
-img {
+img,svg {
     display: block;
     width: 100%;
     height: auto;
@@ -309,7 +309,7 @@ span {
     select the h2 in the first section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#image {
+#image > h2 {
     padding: 12px 0;
     background-color: var(--blue);
     color: var(--white);
@@ -324,7 +324,7 @@ span {
     select the h2 in the second section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#nav {
+main > #nav {
     padding: 12px 0;
     background-color: var(--green);
     color: var(--white);
@@ -336,7 +336,7 @@ span {
     select the unordered list in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-{
+#nav > ul {
     display: block;
     list-style-type: none;
     padding: 0;
@@ -349,7 +349,7 @@ span {
     select the list items in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-*{
+ul.nav > li {
     display: block;
     width: 100%;
 }
@@ -360,7 +360,7 @@ span {
     select the anchor tags in the navigation using the tag names and child/descendant selectors
 */
 /* ----- */
-*{
+#nav > a {
     display: block;
     width: 90%;
     margin: 16px auto;
