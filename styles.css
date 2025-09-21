@@ -94,7 +94,7 @@ body {
     select the header and footer by tag name
 */
 /* ----- */
-header,footer {
+header, footer {
     padding: 2rem 1rem;
     background-color: var(--white);
     width: 100%;
@@ -136,7 +136,7 @@ h1 {
     select both the h1 and h2 tags on the page by tag name
 */
 /* ----- */
-h1,h2 {
+h1, h2 {
     grid-column: 1/-1;
     text-align: center;
     font-weight: bold;
@@ -278,7 +278,7 @@ p {
     select the images and SVGs by tag names
 */
 /* ----- */
-img,svg {
+img, svg {
     display: block;
     width: 100%;
     height: auto;
@@ -455,7 +455,7 @@ input:focus {
     select the labels in the form using the tag name/element selector
 */
 /* ----- */
-#form label {
+label {
     font-size: 1.25rem;
     margin-top: 16px;
 }
@@ -466,7 +466,7 @@ input:focus {
     select the spans in the form using the class name selector
 */
 /* ----- */
-#form span {
+span {
     font-size: 1.5rem;
     font-weight: bold;
     display: inline;
@@ -529,7 +529,7 @@ input[type="submit"]:focus {
     select the h2 in the list styling section using the class name selector
 */
 /* ----- */
-.blue-text h2 {
+h2.blue-text {
     color: var(--blue);
 }
 
@@ -564,7 +564,7 @@ input[type="submit"]:focus {
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-#list ul li::marker {
+li::marker.blue-text {
     font-size: 3rem;
     content: "\2730";
 }
