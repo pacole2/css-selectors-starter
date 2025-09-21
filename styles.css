@@ -780,7 +780,7 @@ caption {
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-*{ 
+tbody td:question-1 { 
     font-weight: bold;
 }
 
@@ -790,7 +790,7 @@ caption {
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-*{ 
+th, td { 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -801,7 +801,7 @@ caption {
     select the table footer in the table styles section using the element/tag name selector
 */
 /* ----- */
-*{ 
+tfoot { 
     font-weight: bold;
 }
 
@@ -814,7 +814,7 @@ caption {
     select all of the divs in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-*{
+#border div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -826,7 +826,7 @@ caption {
     select the first div in the border styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-*{
+#border > div {
     width: 300px;
     height: 300px;
     margin: 16px auto;
@@ -839,7 +839,7 @@ caption {
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-*{
+#border > div > div {
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -851,7 +851,7 @@ caption {
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-*{
+#border div.dashed {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -863,7 +863,7 @@ caption {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-*{
+#more third.div {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -875,7 +875,7 @@ caption {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-*{
+#more div.inner {
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
@@ -890,7 +890,7 @@ caption {
     select the pseudo-elements section using the ID selector
 */
 /* ----- */
-*{
+#pseudo-els {
     position: relative;
 }
 
@@ -900,7 +900,7 @@ caption {
     select the div in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-*{
+#pseudo-els > div {
     width: 275px;
     height: 275px;
     margin: 56px auto 32px;
@@ -915,7 +915,7 @@ caption {
     select the div's before element in the pseudo-elements section using the ID, child/descendant, pseudo-element, and tag name selectors
 */
 /* ----- */
-*{
+#pseudo-els > div::before {
     content: "\2730";
     padding: 12px 24px;
     border-radius: 50%;
@@ -935,7 +935,7 @@ caption {
     select the image in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-*{
+#pseudo-els div > img {
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -953,7 +953,7 @@ caption {
     select the footer element by tag name
 */
 /* ----- */
-*{
+footer {
     margin: 2rem auto 0 auto;
     text-align: center;
 }
