@@ -564,7 +564,7 @@ h2.blue-text {
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-ul > li:blue-text {
+li:nth-child::marker {
     font-size: 3rem;
     content: "\2730";
 }
