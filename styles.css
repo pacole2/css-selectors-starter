@@ -199,7 +199,7 @@ a {
     select the links on the page when a user hovers over them using the tag name and pseudo-class  selector
 */
 /* ----- */
-button:hover {
+a:hover {
     text-decoration: none;
 }
 
@@ -209,7 +209,7 @@ button:hover {
     select the links on the page when they have keyboard focus using the tag name and pseudo-class  selector
 */
 /* ----- */
-input:focus {
+a:focus {
     text-decoration: none;
     outline: 4px solid var(--dv-med-blue);
     outline-offset: 2px;
