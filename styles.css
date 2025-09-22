@@ -770,7 +770,7 @@ caption {
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table tbody tr:nth-child(odd) { 
+tbody tr:nth-child(odd) { 
     background-color: var(--dv-orange);
 }
 
