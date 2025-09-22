@@ -780,7 +780,7 @@ tbody tr:nth-child(odd) {
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-tbody td:question-1 { 
+tbody td:first-child { 
     font-weight: bold;
 }
 
