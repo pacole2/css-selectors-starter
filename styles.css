@@ -242,7 +242,7 @@ main {
     select the sections on the page that are direct descendants to the main by tag names and using the direct descendant selector
 */
 /* ----- */
-main section {
+main > section {
     display: block;
     width: calc(100% - 2rem);
     max-width: calc(500px - 2rem);
